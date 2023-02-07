@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+#nav {
+    position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 2px solid rgba(76, 76, 76, 0.722);
+        border-top: 2px solid rgba(59, 58, 58, 0.71);
+            animation-name: navbar;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    
+    }
+    #nav #add::after{
+        position: absolute;
+        top: 18%;
+        content: "©️";
+        font-size: 17px;
+    }
+    #nav #add::before{
+        position: absolute;
+        bottom: 18%;
+        left: 7%;
+        content: "model management";
+        font-size: 8px;
+        font-weight:500;
+    }
+    
+    
+    #nav h1{
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: 900;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #nav h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        padding-right: 180px;
+        padding-left: 50px;
+        border-right: 2px solid black;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+    
+    }
+    
+    #nav #space {
+        margin: 0 100px 0 -60px;
+    }
+    
+    #nav #me {
+        padding-right: 45px;
+    }
+    
+    #nav i {
+        margin-left: -90px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    @keyframes navbar {
+        0% {
+            transform: translate(0);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translate(0, 20%);
+            opacity: 1;
+        }
+    
+    }
+    
+
+
+#imagehead {
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    height: 620px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0   -350px;
+    background-image: url(https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-color: aquamarine;
+}
+
+#imagehead #txt {
+    position: absolute;
+    bottom: 5%;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+    left: 4%;
+    line-height: 75px;
+
+}
+
+#imagehead hr {
+
+    width: 1350px;
+    color: white;
+    margin-top: 20px;
+}
+
+#imagehead p {
+
+    font-size: 18px;
+}
+
+#imagehead i {
+    color: rgba(255, 255, 255, 0.752);
+    font-size: 55px;
+    padding-left: 1350px;
+    position: absolute;
+    bottom: 7%;
+    font-weight: 100;
+
+}
+
+#imagehead #circle{
+    position: absolute;
+    right: 4%;
+    bottom:22%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgba(248, 244, 244, 0.466);
+    border-radius: 50%;
+    color: white;
+    border-bottom-color: rgb(255, 255, 255);
+
+}
+#imagehead #circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#multi {
+    display: flex;
+  
+
+}
+
+#multi .same {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: aqua;
+    margin-left: 30px;
+    object-fit: cover;
+
+}
+
+#multi .same p {
+    margin-top: 102px;
+    margin-left: 31px;
+}
+
+#multi #one {
+    background-position: center;
+    background-size: cover;
+
+    background-image: url(https://media.istockphoto.com/photos/portrait-of-smiling-young-hispanic-latina-student-at-campus-school-picture-id1383100116?b=1&k=20&m=1383100116&s=170667a&w=0&h=K14DZqd_hRTtQ2jHoxp4FGeqsZ_0d8NqryigUX5d7BM=);
+}
+
+#multi #two {
+    background-image: url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #three {
+    background-image: url(https://media.istockphoto.com/photos/beautiful-young-woman-picture-id1384332917?b=1&k=20&m=1384332917&s=170667a&w=0&h=lFOqeqzs1K8D_980PJmjHt1i1AOUZ0MDjWvWrqqjLqU=);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #four {
+    background-image: url(https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #five {
+    background-image: url(https://images.unsplash.com/photo-1631947430066-48c30d57b943?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #six {
+    background-image: url(https://media.istockphoto.com/photos/portrait-of-young-brunette-asian-indian-girl-wearing-red-denim-shirt-picture-id1321848190?k=20&m=1321848190&s=612x612&w=0&h=Zrn98Qn6386E-RjlvbeXlkWUs_hN6532XksRoMPJHlY=);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #seven {
+    background-image: url(https://media.istockphoto.com/photos/young-female-student-reading-book-or-document-outdoor-picture-id1332642788?k=20&m=1332642788&s=612x612&w=0&h=KbbzQnh1ViUuov5huvdhRw8OzHM4q73Y7Co1xZCuWww=);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #eight {
+    background-image: url(https://media.istockphoto.com/photos/charming-girl-in-the-outdoors-picture-id695228300?k=20&m=695228300&s=612x612&w=0&h=bdHotdrj5a3AHbC0f1FGjHDyRPuBQqhTNq0PWiJrQn4=);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #nine {
+    background-image: url(https://media.istockphoto.com/photos/adorable-african-little-girl-on-studio-white-background-picture-id1392744098?b=1&k=20&m=1392744098&s=170667a&w=0&h=DWS9tvoCr55gl8HRFq9ztlitsbb-H_RtFN3g86uZyHI=);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #ten {
+    background-image: url(https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #eleven {
+    background-image: url(https://media.istockphoto.com/photos/portrait-of-cheerful-mixed-race-teenage-girl-picture-id1288732130?b=1&k=20&m=1288732130&s=170667a&w=0&h=fvOH4A9z_E3i2jJIBkcSjljuy6G1U3Dscd95kd45ao0=);
+    background-position: center;
+    background-size: cover;
+}
+
+#multi #twelve {
+    background-image: url(https://media.istockphoto.com/photos/young-woman-working-at-home-stock-photo-picture-id1359499268?k=20&m=1359499268&s=612x612&w=0&h=BwH79w-KqUat93DyOzM0KbYDLgI9yo3si-xQybGjY38=);
+    background-position: center;
+    background-size: cover;
+}
+
+#line {
+    margin-top: 40px;
+    position: relative;
+
+}
+ /* #oval{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background:linear-gradient(blue,rgb(243, 162, 175),rgb(241, 241, 127));
+   mix-blend-mode:difference;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+ */
+
+#line p {
+    padding: 8px;
+    letter-spacing: 40px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+#line span {
+    margin-left: 90px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+#imagtwo {
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    /* background-color: beige; */
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#imagtwo #left {
+    height: 600px;
+    width: 49%;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+}
+
+#imagtwo #right {
+    height: 600px;
+    width: 49%;
+    /* background-color: rgb(102, 255, 0); */
+
+}
+
+#imagtwo #right img {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://select-s3.agencypin.com/files/gallery/9543/expanded/model_9543_60292e0d57fc.jpeg);
+    background-color: lightblue;
+}
+
+#imagtwo #right #inside {
+    display: flex;
+    justify-content: space-between;
+}
+
+#imagtwo #right h4 {
+    width: 200px;
+    font-size: 20px;
+
+}
+
+#imagtwo #right p {
+    width: 300px;
+    font-size: 16px;
+
+}
+
+#head {
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#imagthree {
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    /* background-color: beige;  */
+    display: flex;
+    gap: 20px;
+}
+
+#imagthree #left {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#imagthree #left #circle {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid gray;
+
+}
+
+#imagthree #left #circle h5 {
+    color:rgb(65, 137, 157);
+    
+    padding-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#imagthree #left h4 {
+    margin-top: 530px;
+    margin-left: 10px;
+    width: 55%;
+    font-size: 18px;
+    word-spacing: 5px;
+
+}
+
+#imagthree #right {
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/560070e9e4b0ec1a479fb141/1572862667927-2I4W4SVBVKJJ04KWHERO/1IMG_4681.jpg?format=1000w);
+    background-color: rgb(153, 255, 0);
+}
+
+#imagefour {
+    width: 95%;
+    height: 540px;
+    margin: auto;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -40px;
+    margin-bottom: 20px;
+background-image: url(https://images.unsplash.com/photo-1568251188392-ae32f898cb3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80);
+    background-color: lightgreen;
+}
+#imagefour:hover{
+    width: 98%;
+    height: 550px;
+
+   
+}
+
+#update {
+    margin: 20px;
+}
+
+#update h1 {
+    margin-top: 50px;
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+
+#update #inside {
+    display: flex;
+
+}
+
+#update #inside #one {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#update #inside .imgg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(https://media.istockphoto.com/photos/portrait-of-smiling-young-hispanic-latina-student-at-campus-school-picture-id1383100116?b=1&k=20&m=1383100116&s=170667a&w=0&h=K14DZqd_hRTtQ2jHoxp4FGeqsZ_0d8NqryigUX5d7BM=);
+    background-size: cover;
+    background-position: center;
+    background-color: blueviolet;
+    margin-left: 15%;
+
+}
+
+
+#update #inside #two {
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+#update #inside #two p {
+    font-size: 12px;
+}
+
+
+#update #inside #fourimgg {
+    background-image: none;
+    background-color: white;
+}
+
+#update #inside #twoimgg {
+    background-image: url(https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+
+}
+
+#update #inside #threeimgg {
+    background-image: none;
+    background-color: white;
+}
+
+#update #inside #threeimgg h3 {
+    margin-top: 15px;
+}
+
+
+#imagefive {
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    /* background-color : lawngreen; */
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+#imagefive #left {
+    width: 50%;
+    height: 100%;
+}
+
+#imagefive #left img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#imagefive #right {
+    width: 50%;
+    height: 100%;
+}
+#imagefive #right #txt h1{
+margin-bottom: 25px;
+}
+
+#imagefive #right #txt h5{
+width: 220px;
+font-size: 16px;
+margin-bottom: 30px;
+}
+
+#imagefive #right #txt p{
+    width: 90%;
+}
+
+#imagefive #right #imgfor{
+    width: 100%;
+    height: 70%;
+    gap: 50px;
+    display: flex;
+    margin-top: 30px;
+   
+}
+
+#imagefive #right #limg img{
+    width: 110%;
+    height: 87%;
+    
+}
+
+#imagefive #right #rimg img{
+    width: 168%;
+    height: 87%;
+
+}
+
+
+#imagesix {
+    width: 95%;
+    height: 540px;
+    margin: auto;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -290px;
+
+    
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-color: lightgreen;
+}
+
+
+
+#imageseven {
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    /* background-color: beige; */
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#imageseven #left {
+    height: 600px;
+    width: 49%;
+    background-color: rgb(137, 179, 179);
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+background-image: url(https://images.pexels.com/photos/14679695/pexels-photo-14679695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+
+#imageseven #right {
+    height: 600px;
+    width: 49%;
+    /* background-color: rgb(102, 255, 0); */
+
+}
+
+#imageseven #right img {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGdpcmwlMjBzb3V0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-color: lightblue;
+}
+
+#imageseven #right #inside {
+    display: flex;
+    justify-content: space-between;
+}
+
+#imageseven #right h4 {
+    width: 200px;
+    font-size: 20px;
+
+}
+
+#imageseven #right p {
+    width: 300px;
+    font-size: 16px;
+
+}
+
+#row {
+    width: 100%;
+    height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+white-space: nowrap;
+overflow-x: auto;
+padding: 10px;
+
+
+}
+
+#row hr{
+    width: 100%;
+    border: 2px solid greenyellow;
+}
+
+
+
+#row::-webkit-scrollbar{
+    display: none;
+}
+
+#row h1{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    margin-left: 90px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size: 60px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes scroll {
+    0%{
+        transform:translate(100%);
+    }
+    100%{
+        transform: translate(calc(0% - 90px));
+        /* transform: translate(-100%); */
+    }
+}
+#imageight{
+    width: 95%;
+    height: 450px;
+    /* background-color: blanchedalmond; */
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#imageight #blog{
+    width: 10%;
+   
+}
+
+
+#imageight #left{
+width: 40%;
+height: 100%;
+
+}
+
+#imageight #left img{
+    width: 100%;
+    height: 70%;
+    margin-top: 30px;object-fit:cover;
+    object-position: top;
+}
+
+#imageight #right{
+width: 40%;
+height: 100%;
+}
+
+#imageight #right img{
+    width: 100%;
+    height: 70%;
+    margin-top: 30px;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+
+
+
+.footer {
+    background: rgba(226, 223, 223, 0.692);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.footer-container {
+    display:flex;
+    flex-direction: row;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+
+
+.footer h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.footer a{
+    text-decoration: none;
+    color: #9daff6;
+}
+.footer p{
+    width: 30vw;
+    margin: auto;
+    text-decoration: none;
+    color: rgb(19, 0, 0);
+}
