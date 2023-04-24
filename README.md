@@ -6,8 +6,9 @@
 **Frontend:** 
 1. HTML
 2. CSS
-
-Little bit of animation used 
+<br>
+<br>
+Little bit of animation used <br>
 Dark And Light Mode effect
 
 
