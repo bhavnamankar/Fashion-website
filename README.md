@@ -7,6 +7,8 @@
 1. HTML
 2. CSS
 
+Little bit of animation used 
+Dark And Light Mode effect
 
 
 
@@ -18,5 +20,4 @@
 ## Live Demo
 
 
-https://bhavnamankar.github.io/Fashion-Website/
-
+https://bhavnamankar.github.io/Fashion-website/
